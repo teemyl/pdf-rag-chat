@@ -1,7 +1,7 @@
 [project]
 name = "backend"
 version = "0.1.0"
-description = "Ebook Knowledge Base Backend"
+description = "PDF RAG Chat Backend"
 authors = [
     {name = "Teemu", email = "[EMAIL_ADDRESS]"}
 ]

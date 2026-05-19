@@ -1,6 +1,6 @@
-# Ebook RAG Demo
+# PDF RAG Chat
 
-A personal Retrieval-Augmented Generation (RAG) knowledge base built to ingest and chat with specific ebooks. 
+A personal Retrieval-Augmented Generation (RAG) knowledge base built to ingest and chat with specific PDF ebooks. 
 
 This project demonstrates a full-stack, AI-powered conversational interface using local vector embeddings for cost-efficiency and Anthropic's Claude for high-quality reasoning.
 
@@ -8,7 +8,7 @@ This project demonstrates a full-stack, AI-powered conversational interface usin
 
 - **Backend:** [FastAPI](https://fastapi.tiangolo.com/) (Python) managed by `uv`.
 - **Frontend:** [React](https://react.dev/) + [Vite](https://vitejs.dev/).
-- **AI & Orchestration:** [LangChain](https://python.langchain.com/) + [Claude 3.5 Sonnet](https://www.anthropic.com/claude).
+- **AI & Orchestration:** [LangChain](https://python.langchain.com/) + [Claude 4.6 Sonnet](https://www.anthropic.com/claude).
 - **Vector Database:** [Qdrant](https://qdrant.tech/) running via Docker.
 - **Embeddings:** Local HuggingFace embeddings (`BAAI/bge-small-en-v1.5`) for fast, private, and cost-effective document vectorization without hitting external API limits during ingestion.
 
