@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import Markdown from 'react-markdown';
 
 const API_URL = 'http://localhost:8000';
 
@@ -56,11 +57,11 @@ function App() {
         <h1>Knowledge Base</h1>
         <p>Chat with your personal ebook library</p>
       </div>
-      
+
       <div className="chat-container">
         {messages.map((msg, index) => (
           <div key={index} className={`message ${msg.role}`}>
-            {msg.content}
+            <Markdown>{msg.content}</Markdown>
           </div>
         ))}
         {isLoading && (
