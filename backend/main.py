@@ -60,11 +60,20 @@ def get_rag_chain():
     # Setup Prompt
     template = """Answer the question based ONLY on the following context:
 
+<context>
 {context}
+</context>
 
-Question: {question}
+Question:
 
-If you don't know the answer based on the context, say "I cannot answer this based on the provided ebooks."
+{question}
+
+Answer the question based on the context and the following guidelines:
+<answer_guidelines>
+- If you don't know the answer based on the context, say "I cannot answer this based on the provided ebooks."
+- Never start an answer with "Based on the" or "According to the" or any similar phrase that indicates that you are answering based on the provided context.
+- Answer the question in a concise and informative manner.
+</answer_guidelines>
 """
     prompt = ChatPromptTemplate.from_template(template)
 
